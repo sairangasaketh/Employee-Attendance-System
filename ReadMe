@@ -4,27 +4,27 @@ A simple and clean web application that allows employees to mark their daily att
 
 ---
 
-## 📌 Features
+##  Features
 
-### 👨‍💼 Employee
+### Employee
 - Register and log in.
 - Check-in and check-out once per day.
 - View personal attendance history.
 
-### 🧑‍💼 Manager
+### Manager
 - Log in with manager access.
 - View attendance of all employees.
 - Filter by date or employee name.
 - Track present, absent, or late status.
 
-### ⚙️ General
+### General
 - Secure authentication using Supabase Auth.
 - Responsive UI (mobile + desktop).
 - Fast development setup using Vite.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend:** React, Vite, TypeScript
 - **Database + Auth:** Supabase
@@ -34,7 +34,7 @@ A simple and clean web application that allows employees to mark their daily att
 
 ---
 
-## 📥 Requirements to Run the Project
+## Requirements to Run the Project
 
 Make sure you have the following installed:
 
@@ -46,7 +46,7 @@ Make sure you have the following installed:
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 employee-attendance-system/
 │── src/
@@ -77,8 +77,8 @@ cd <your-repo>
 4️⃣ Start the development server
     npm run dev
 This will open your project at:
-http://localhost:5173
-📦 Production Build
+        http://localhost:5173
+ Production Build
 Build:
   npm run build
 Preview:
@@ -86,7 +86,7 @@ Preview:
 ## Seed Data (Demo Users & Attendance) ##
 You can insert sample data into Supabase using SQL:
 
-👤 Sample Users
+### Sample Users ###
 sql
 
 INSERT INTO users (id, name, email, role) VALUES
