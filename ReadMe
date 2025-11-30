@@ -1,59 +1,51 @@
-# Employee Attendance Management System
+# **Employee Attendance Management System**
 
-A simple and clean web application that allows employees to mark their daily attendance and allows managers to track and manage all attendance records. This project is built using **React + Vite**, **Tailwind CSS**, and **Supabase**.
-
----
-
-##  Features
-
-### Employee
-- Register and log in.
-- Check-in and check-out once per day.
-- View personal attendance history.
-
-### Manager
-- Log in with manager access.
-- View attendance of all employees.
-- Filter by date or employee name.
-- Track present, absent, or late status.
-
-### General
-- Secure authentication using Supabase Auth.
-- Responsive UI (mobile + desktop).
-- Fast development setup using Vite.
+A simple web application that allows employees to mark daily attendance and enables managers to track and manage all records using React, Vite, Tailwind CSS, and Supabase.
 
 ---
 
-## Tech Stack
+## **Features**
 
-- **Frontend:** React, Vite, TypeScript
-- **Database + Auth:** Supabase
-- **Styling:** Tailwind CSS
-- **Package Manager:** npm (or Bun)
-- **Version Control:** Git + GitHub
+### **Employee**
+
+* Register and log in
+* Check-in and check-out once per day
+* View personal attendance history
+
+### **Manager**
+
+* Log in with manager access
+* View attendance of all employees
+* Filter by employee name or date
+* Track present, absent, and late status
+
+### **General**
+
+* Secure authentication using Supabase Auth
+* Responsive design for all screen sizes
+* Fast development setup using Vite
 
 ---
 
-## Requirements to Run the Project
+## **Tech Stack**
 
-Make sure you have the following installed:
-
-- **Node.js (LTS version)**  
-- **npm** (comes with Node.js)  
-- **Supabase account**  
-- **Git**  
-
+* React, Vite, TypeScript
+* Supabase for database and authentication
+* Tailwind CSS for styling
+* npm or Bun for package management
+* Git and GitHub for version control
 
 ---
 
-##  Project Structure
+## **Project Structure**
 
+```
 employee-attendance-system/
 │── src/
-│ ├── components/
-│ ├── pages/
-│ ├── types/
-│ └── App.tsx
+│   ├── components/
+│   ├── pages/
+│   ├── types/
+│   └── App.tsx
 │
 │── supabase/
 │── public/
@@ -63,41 +55,69 @@ employee-attendance-system/
 │── tailwind.config.js
 │── vite.config.js
 └── README.md
+```
+
+---
+
+## **How to Run the Project Locally**
+
+### **1. Clone the repository**
+
+```bash
+git clone https://github.com/sairangasaketh/Employee-Attendance-System.git
+cd Employee-Attendance-System
+```
+
+### **2. Install dependencies**
+
+```bash
+npm install
+# or
+bun install
+```
+
+### **3. Create an environment file**
+
+```
+VITE_SUPABASE_PROJECT_ID="azwexqkwydrtqbzxbwsu"
+VITE_SUPABASE_PUBLISHABLE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF6d2V4cWt3eWRydHFienhid3N1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ0MDM4NzksImV4cCI6MjA3OTk3OTg3OX0.BCSJAFILhNKE5xXJ3dyPRW7TA6CgNai37kGuC7hFzDQ"
+VITE_SUPABASE_URL="https://azwexqkwydrtqbzxbwsu.supabase.co"
+
+```
+
+### **4. Start the development server**
+
+```bash
+npm run dev
+```
+
+Runs at: [http://localhost:5173](http://localhost:5173)
+
+---
 
 
-##How to Run the Project Locally##
-1️⃣ Clone the repository
-    git clone https://github.com/sairangasaketh/Employee-Attendance-System.git
-cd <your-repo>
-2️⃣ Install all dependencies
-    npm install
-(You can use bun install if you prefer Bun.)
+---
 
+## **Seed Data**
 
-4️⃣ Start the development server
-    npm run dev
-This will open your project at:
-        http://localhost:5173
- Production Build
-Build:
-  npm run build
-Preview:
-  npm run preview
-## Seed Data (Demo Users & Attendance) ##
-You can insert sample data into Supabase using SQL:
+### **Sample Users**
 
-### Sample Users ###
-sql
-
+```sql
 INSERT INTO users (id, name, email, role) VALUES
 ('emp1', 'John Doe', 'john@example.com', 'employee'),
 ('emp2', 'Alice Smith', 'alice@example.com', 'employee'),
 ('mgr1', 'Manager One', 'manager@example.com', 'manager');
-🕒 Sample Attendance
-sql
+```
 
+### **Sample Attendance**
+
+```sql
 INSERT INTO attendance (user_id, date, check_in, check_out, status) VALUES
 ('emp1', '2025-01-01', '09:05', '17:00', 'present'),
 ('emp2', '2025-01-01', '09:20', '17:10', 'late');
+```
+
+---
+
 
 
